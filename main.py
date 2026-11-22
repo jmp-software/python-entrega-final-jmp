@@ -13,11 +13,13 @@ Programa de gestión de productos con SQLite:
 """
 
 from conexiones import inicia_bd
+
 from funciones_generales import (
     limpia_pantalla, pausa, imprime_menu,
     normaliza_texto, valida_precio, valida_entero_positivo,
     imprime_producto, imprime_lista_productos, resetea_bd_interfaz
 )
+
 from funciones_sql import (
     inserta_producto, obtiene_todos, obtiene_por_id,
     busca_por_nombre_o_categoria, productos_bajo_stock,
