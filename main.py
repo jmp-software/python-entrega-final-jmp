@@ -24,7 +24,7 @@ from funciones_sql import (
     actualiza_producto, elimina_producto, carga_desde_json 
 )
 
-PRECARGAR_DESDE_JSON = True # Poner en False para que no haga la pregarga automática desde el JSON al iniciar el programa (en True solo la hace si la lista está vacía)
+PRECARGAR_DESDE_JSON = True # Poner en False para que no haga la precarga automática desde el JSON al iniciar el programa (en True solo la hace si la lista está vacía)
 
 
 ### 1) AGREGA DE PRODUCTO ###
