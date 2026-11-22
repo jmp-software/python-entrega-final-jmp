@@ -24,6 +24,7 @@ from funciones_sql import (
     actualiza_producto, elimina_producto, carga_desde_json 
 )
 
+PRECARGAR_DESDE_JSON = True # Poner en False si no para que no haga la pregarga automática desde el JSON al iniciar el programa
 
 
 ### 1) AGREGA DE PRODUCTO ###
@@ -227,7 +228,7 @@ def main():
     inicia_bd()
     
     # Intenta cargar automáticamente la primera vez desde el JSON si la base de datos está vacía y existe el JSON
-    if not obtiene_todos():
+    if PRECARGAR_DESDE_JSON and not obtiene_todos():
         
         insertados = carga_desde_json()
         if insertados > 0:
