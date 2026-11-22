@@ -36,7 +36,7 @@ El programa utiliza SQLite y crea automáticamente el archivo inventario.db la p
 ├── main.py              
 ├── conexiones.py       
 ├── funciones_sql.py     
-├── funciones.py         
+├── funciones_generales.py         
 ├── productos.json       
 ├── inventario.db        
 └── README.md
