@@ -1,0 +1,37 @@
+[
+    {
+        "nombre": "Cuaderno",
+        "descripcion": "Cuaderno universitario 200 hojas rayado",
+        "cantidad": 25,
+        "precio": 1599.0,
+        "categoria": "Librería"
+    },
+    {
+        "nombre": "Lápiz",
+        "descripcion": "Lápiz grafito HB con goma",
+        "cantidad": 100,
+        "precio": 3999.0,
+        "categoria": "Librería"
+    },
+    {
+        "nombre": "Mouse",
+        "descripcion": "Mouse óptico USB 1600 DPI",
+        "cantidad": 15,
+        "precio": 8500.0,
+        "categoria": "Tecnología"
+    },
+    {
+        "nombre": "Teclado",
+        "descripcion": "Teclado mecánico retroiluminado",
+        "cantidad": 8,
+        "precio": 12000.0,
+        "categoria": "Tecnología"
+    },
+    {
+        "nombre": "Silla",
+        "descripcion": "Silla ergonómica con apoyabrazos",
+        "cantidad": 3,
+        "precio": 45000.0,
+        "categoria": "Muebles"
+    }
+]
