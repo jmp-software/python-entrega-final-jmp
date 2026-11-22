@@ -34,15 +34,15 @@ El programa utiliza SQLite y crea automáticamente el archivo inventario.db la p
 ## 📁 Estructura del proyecto
 
 .
-├── main.py              # Programa principal (menú + interfaz)
-├── conexiones.py        # Conexión a SQLite y creación de tabla
-├── funciones_sql.py     # Operaciones CRUD y consultas SQL
-├── funciones.py         # Utilidades de UI y validaciones
-├── productos.json       # Datos de ejemplo para precargar la BD
-├── inventario.db        # Se genera automáticamente al ejecutar
+├── main.py              
+├── conexiones.py       
+├── funciones_sql.py     
+├── funciones.py         
+├── productos.json       
+├── inventario.db        
 ├── .gitignore
-├── ejecutar             # Script de arranque para Linux
-├── ejecutar.bat         # Script de arranque para Windows
+├── ejecutar             
+├── ejecutar.bat         
 └── README.md
 
 ## 💻 Sistemas testeados
