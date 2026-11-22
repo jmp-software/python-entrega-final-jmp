@@ -13,10 +13,13 @@ def obtiene_conexion():
     # Crear y devolver conexión a la base de datos tipo SQLite.
     # Activar claves foráneas y brindar filas como sqlite3.Row para acceder a columnas por nombre.
     
+    from funciones_generales import normaliza_texto
+
     conexion = sqlite3.connect(RUTA_BD)
     conexion.row_factory = sqlite3.Row
-    return conexion
+    conexion.create_function("normaliza_texto", 1, normaliza_texto)
 
+    return conexion
 
 def crea_tabla():
     

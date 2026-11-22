@@ -57,8 +57,8 @@ def busca_por_nombre_o_categoria(texto):
         cursor = conexion.cursor()
         cursor.execute("""
             SELECT * FROM productos
-            WHERE nombre LIKE ? COLLATE NOCASE
-               OR categoria LIKE ? COLLATE NOCASE
+            WHERE normaliza_texto(nombre)LIKE ? COLLATE NOCASE
+               OR normaliza_texto(categoria) LIKE ? COLLATE NOCASE
             ORDER BY id
         """, (patron, patron))
         return cursor.fetchall()
