@@ -10,9 +10,9 @@ RUTA_BD = "inventario.db"
 
 def obtiene_conexion():
     
-    # Crear y devolver conexión a la base de datos tipo SQLite.
-    # Activar claves foráneas y brindar filas como sqlite3.Row para acceder a columnas por nombre.
-    
+    # Crea y retorna conexión a la base de datos tipo SQLite.
+    # Activa claves foráneas y brindar acceso
+    # Crea/traspasa función de normalización de texto para búsqueda por nombre y categoría (ignora tildes, díéreses, etc.)    
     from funciones_generales import normaliza_texto
 
     conexion = sqlite3.connect(RUTA_BD)
