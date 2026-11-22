@@ -33,16 +33,12 @@ El programa utiliza SQLite y crea automáticamente el archivo inventario.db la p
 
 ## 📁 Estructura del proyecto
 
-.
 ├── main.py              
 ├── conexiones.py       
 ├── funciones_sql.py     
 ├── funciones.py         
 ├── productos.json       
 ├── inventario.db        
-├── .gitignore
-├── ejecutar             
-├── ejecutar.bat         
 └── README.md
 
 ## 💻 Sistemas testeados
@@ -68,37 +64,6 @@ Ingresar al directorio del proyecto:
 
     python main.py
 
-## 📊 Flujo de ejecución
-
-        🐍 Python
-           │
-           ▼
-      📂 Proyecto
-        /      \
-       ▼        ▼
-   🪟 Windows  🐧 Linux
-       │          │
-       ▼          ▼
- ejecutar.bat   ./ejecutar
-       │          │
-       └────┬─────┘
-            ▼
-        main.py
-            │
-            ▼
-   conexiones.inicializar_bd()
-            │
-            ▼
-    ┌───────┴────────┐
-    ▼                ▼
-inventario.db    productos.json
- (crea tabla)    (precarga si está vacía)
-            │
-            ▼
-        🧭 Menú principal
-    ┌───────┼───────┬───────┬───────┬───────┬───────┬───────┐
-    1       2       3       4       5       6       7       8
- Agregar Mostrar Buscar Actual. Eliminar Reporte Resetear Salir
 
 ## 🧭 Menú principal
 
